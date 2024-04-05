@@ -1,0 +1,151 @@
+.body {
+    background-color: rgb(27, 27, 26);
+    font-family: "Lustria", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Header */
+.posisi {
+    justify-content: end;
+}
+
+span {
+    font-family: "Lustria", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+    margin: 10px;
+}
+
+span:hover{
+    color: rgb(212, 175, 55);
+}
+/* Header End */
+
+/* Konten Foto Gereja */
+.image {
+    display: flex;
+    width: 100%;
+    transition: 2s;
+}
+
+.image img{
+    width: 100%;
+}
+
+.wrapper {
+    width: 70%;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+#slide-1:target ~ .image{
+    margin-left: 0px;
+}
+
+#slide-2:target ~ .image{
+    margin-left: -100%;
+}
+
+.navigation a {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: #dedede;
+    font-size: 0px;
+    border-radius: 50%;
+    margin: 3px;
+    transition: 1s;
+}
+
+.navigation :hover{
+    background-color: rgb(212, 175, 55);
+}
+
+.navigation {
+    position: absolute;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: -50px;
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper{
+        width:90%;
+    }
+} 
+/* Konten Foto Gereja End */
+
+/* Visi & Misi */
+.visi-misi {
+    margin: 0;
+    padding: 0;
+    box-sizing: 'border box';
+}
+.container {
+    min-height: 100vh;
+    width: 100%;
+}
+.service-wrapper{
+    padding: 5% 8%;
+}
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+}
+.cards {
+    background-color: rgb(27, 27, 26);
+    grid-template-columns: repeat(2,1fr);
+    display: grid;
+    gap: 25px;
+    margin-top: 10px;
+}
+h1 {
+    font-size: 3rem;
+}
+p {
+    width: 60%;
+    text-align: center;
+}
+
+.card {
+    height: auto;
+    width: auto;
+    background-color: rgb(27, 27, 26);
+    padding: 3% 8%;
+    border-radius: 8px;
+    transition: 0.6s;
+}
+
+.card i{
+    color: crimson;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.card p{
+    text-align: left;
+    width: 100%;
+    margin: 20px 0;
+}
+.card:hover{
+    background: linear-gradient(90deg,rgb(57, 48, 19), rgb(212, 175, 55));
+    transform: translateY(-8px);
+}
+
+.card:hover i {
+    color: #dedede;
+}
+@media (max-width:1200px){
+    
+}
+/* Visi & Misi End */
